@@ -12,7 +12,7 @@ bot = Client(
 )
 
 CHAT_ID = os.environ.get('CHAT_ID')
-owner = os.environ.get('OWNER')
+owner = int(os.environ.get('OWNER'))
 
 
 def call_back_in_filter(data):
